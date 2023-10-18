@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- ... (head content) ... -->
+</head>
+<body>
+  <div class="calculator">
+    <h1>Investment Calculator</h1>
+    <label for="plan">Select Investment Plan:</label>
+    <select id="plan">
+      <option value="starter">Starter Plan</option>
+      <option value="pro">Pro Plan</option>
+    </select>
+    <label for="months">Select Investment Duration:</label>
+    <select id="months">
+      <option value="6">6 months</option>
+      <option value="12">12 months</option>
+    </select>
+    <label for="amount">Enter Investment Amount (₦):</label>
+    <input type="number" id="amount" min="200000" step="50000" required>
+    <button id="calculate">Calculate</button>
+    <div id="result" class="hidden">
+      <p>Your ROI Amount: <span id="roiAmount"></span></p>
+      <p>Total Take Home Money: <span id="totalAmount"></span></p>
+    </div>
+    <button id="reset">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
